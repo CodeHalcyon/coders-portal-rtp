@@ -13,7 +13,7 @@ import LoginPage from './pages/LoginPage.jsx'
 const router = createBrowserRouter([
   {
     path:"/",
-    element: <LoginPage/>,
+    element: <App/>,
     children:[
       {
         path:'/home',
