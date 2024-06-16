@@ -20,6 +20,10 @@ function Navbar() {
                             <li><NavLink className={({ isActive }) => {
                                 return isActive ? "text-orange-300" : "text-black"
                             }} to="/communities">Communities</NavLink></li>
+
+                            <li><NavLink className={({ isActive }) => {
+                                return isActive ? "text-orange-300" : "text-black"
+                            }} to="/authorize">Log In</NavLink></li>
                         </ul>
                     </nav>
                 </div>
