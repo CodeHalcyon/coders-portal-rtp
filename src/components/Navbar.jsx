@@ -10,7 +10,7 @@ function Navbar() {
                         <ul className='flex gap-6 pr-9'>
                             <li><NavLink className={({ isActive }) => {
                                 return isActive ? "text-orange-300" : "text-black"
-                            }} to="/">Home</NavLink></li>
+                            }} to="/home">Home</NavLink></li>
                             <li><NavLink className={({ isActive }) => {
                                 return isActive ? "text-orange-300" : "text-black"
                             }} to="/events">Events</NavLink></li>

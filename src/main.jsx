@@ -8,14 +8,15 @@ import Blogs from './pages/Blogs.jsx'
 import About from './pages/About.jsx'
 import Events from './pages/Events.jsx'
 import Communities from './pages/Communities.jsx'
+import LoginPage from './pages/LoginPage.jsx'
 
 const router = createBrowserRouter([
   {
     path:"/",
-    element: <App/>,
+    element: <LoginPage/>,
     children:[
       {
-        path:'/',
+        path:'/home',
         element:<Home/>
       },
       {
