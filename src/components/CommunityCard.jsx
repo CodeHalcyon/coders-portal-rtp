@@ -5,7 +5,7 @@ const CommunityCard = () => {
     <>
       <div className='border-2 w-1/4'>
         <div>
-            <img src="../../public/images/OMEN_PortalWP_04.jpg" alt="image here" />
+            <img src="./public/images/OMEN_PortalWP_04.jpg" alt="image here" />
         </div>
         <div className='border-2 '>
             <h1 className='text-xl font-bold'>AI Community</h1>
