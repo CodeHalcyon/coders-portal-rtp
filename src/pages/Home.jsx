@@ -84,44 +84,50 @@ const Home = () => {
         .fromTo(heroSubtitleRef.current, { y: 40, opacity: 0 }, { y: 0, opacity: 1, duration: 0.8 }, '-=0.5')
         .fromTo(heroBtnsRef.current, { y: 30, opacity: 0 }, { y: 0, opacity: 1, duration: 0.6 }, '-=0.4')
 
-      gsap.fromTo(
-        statsRef.current.children,
-        { y: 30, opacity: 0 },
-        {
-          y: 0,
-          opacity: 1,
-          duration: 0.6,
-          stagger: 0.15,
-          ease: 'power2.out',
-          scrollTrigger: { trigger: statsRef.current, start: 'top 85%' },
-        }
-      )
+      if (statsRef.current?.children) {
+        gsap.fromTo(
+          statsRef.current.children,
+          { y: 30, opacity: 0 },
+          {
+            y: 0,
+            opacity: 1,
+            duration: 0.6,
+            stagger: 0.15,
+            ease: 'power2.out',
+            scrollTrigger: { trigger: statsRef.current, start: 'top 85%' },
+          }
+        )
+      }
 
-      gsap.fromTo(
-        featuresRef.current.children,
-        { y: 50, opacity: 0 },
-        {
-          y: 0,
-          opacity: 1,
-          duration: 0.7,
-          stagger: 0.2,
-          ease: 'power2.out',
-          scrollTrigger: { trigger: featuresRef.current, start: 'top 80%' },
-        }
-      )
+      if (featuresRef.current?.children) {
+        gsap.fromTo(
+          featuresRef.current.children,
+          { y: 50, opacity: 0 },
+          {
+            y: 0,
+            opacity: 1,
+            duration: 0.7,
+            stagger: 0.2,
+            ease: 'power2.out',
+            scrollTrigger: { trigger: featuresRef.current, start: 'top 80%' },
+          }
+        )
+      }
 
-      gsap.fromTo(
-        eventsRef.current.children,
-        { y: 50, opacity: 0 },
-        {
-          y: 0,
-          opacity: 1,
-          duration: 0.7,
-          stagger: 0.2,
-          ease: 'power2.out',
-          scrollTrigger: { trigger: eventsRef.current, start: 'top 80%' },
-        }
-      )
+      if (eventsRef.current?.children) {
+        gsap.fromTo(
+          eventsRef.current.children,
+          { y: 50, opacity: 0 },
+          {
+            y: 0,
+            opacity: 1,
+            duration: 0.7,
+            stagger: 0.2,
+            ease: 'power2.out',
+            scrollTrigger: { trigger: eventsRef.current, start: 'top 80%' },
+          }
+        )
+      }
 
       gsap.fromTo(
         ctaRef.current,
@@ -265,7 +271,7 @@ const Home = () => {
             </Link>
           </div>
         </div>
-      </section>a
+      </section>
     </div>
   )
 }
